@@ -1,2 +1,8 @@
 # maven library cache
 .m2/repository/
+
+# web
+web/.classpath
+web/.project
+web/.settings/
+web/target/
