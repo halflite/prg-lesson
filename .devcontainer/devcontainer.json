@@ -3,7 +3,22 @@
 	"build": {
 		"dockerfile": "Dockerfile",
 	},
+	"mounts": [
+		"source=${localWorkspaceFolder}/.m2,target=/root/.m2,type=bind,consistency=cached"
+	],
 	"extensions": [
-		"mhutchie.git-graph"
+    "redhat.java",
+    "redhat.vscode-xml",
+    "redhat.vscode-yaml",
+    "redhat.fabric8-analytics",
+    "redhat.vscode-commons",
+    "vscjava.vscode-java-pack",
+    "vscjava.vscode-java-debug",
+    "vscjava.vscode-maven",
+    "vscjava.vscode-java-dependency",
+    "vscjava.vscode-java-test",
+    "visualstudioexptteam.vscodeintellicode",
+    "ms-ceintl.vscode-language-pack-ja",
+    "mhutchie.git-graph"
 	],
 }
