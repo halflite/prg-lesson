@@ -1,0 +1,9 @@
+{
+	"name": "prg-lesson",
+	"build": {
+		"dockerfile": "Dockerfile",
+	},
+	"extensions": [
+		"mhutchie.git-graph"
+	],
+}
