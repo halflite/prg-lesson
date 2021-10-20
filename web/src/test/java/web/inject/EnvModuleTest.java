@@ -13,7 +13,7 @@ public class EnvModuleTest {
     Config config = ConfigProvider.getConfig();
     assertNotNull(config);
 
-    Integer value = config.getValue("PORT", Integer.class);
+    Integer value = config.getValue("server.port", Integer.class);
     assertThat(value).isNotNull().isEqualTo(8080);
   }
 }
