@@ -1,12 +1,12 @@
 {
-	"name": "prg-lesson",
-	"build": {
-		"dockerfile": "Dockerfile",
-	},
-	"mounts": [
-		"source=${localWorkspaceFolder}/.m2,target=/root/.m2,type=bind,consistency=cached"
-	],
-	"extensions": [
+  "name": "prg-lesson",
+  "build": {
+    "dockerfile": "Dockerfile",
+  },
+  "mounts": [
+    "source=${localWorkspaceFolder}/.m2,target=/root/.m2,type=bind,consistency=cached"
+  ],
+  "extensions": [
     "redhat.java",
     "redhat.vscode-xml",
     "redhat.vscode-yaml",
@@ -20,5 +20,18 @@
     "visualstudioexptteam.vscodeintellicode",
     "ms-ceintl.vscode-language-pack-ja",
     "mhutchie.git-graph"
-	],
+  ],
+  "settings": {
+    "editor.tabSize": 2,
+    "java.format.settings.profile": "GoogleStyle",
+    "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+    "java.completion.favoriteStaticMembers": [
+      "org.junit.Assert.*",
+      "org.mockito.Mockito.*",
+      "org.assertj.core.api.Assertions.*"
+    ],
+    "[java]": {
+      "editor.formatOnSave": true,
+    }
+  }
 }
